@@ -1,0 +1,58 @@
+body
+{
+    margin: 0;
+    font-family: cursive;
+    background-color: purple;
+}
+.input-container
+{
+    height: 15vh;
+    
+}
+.task-container
+{
+    height: 85vh;
+    
+    color: white;
+    text-align: center;
+}
+.input_box
+{
+    font-family: cursive;
+    height: 60%;
+    font-size: 1.25rem;
+   
+    margin-left: 83vh;
+    display: block;
+    margin:0 auto;
+    margin-top: 4vh;
+    width: 40%;
+}
+li
+{
+    list-style: none;
+    font-size: 1.25rem;
+    background-color:black;
+    width:60vw;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+   
+}
+.instruction
+{
+    font-size: 1.75rem;
+}
+@media screen and (max-width:700px) 
+{
+    body
+    {
+        background-color: lawngreen;
+    }
+    .input_box
+    {
+        width: 60vw;
+    }
+}

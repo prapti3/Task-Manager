@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+            .toolbar
+            {
+                display: flex;
+                background-color:wheat;
+                height: 12vh;
+                justify-content: space-around;
+               
+            }
+            .filter-container
+            {
+                border-radius: 0.5rem;
+                display: flex;
+                background-color:rgb(100, 83, 83);
+                height: 10vh;
+                width: 60vh;
+                margin-left: 20vh;
+                margin-top: 1vh;
+            }
+            .action-container
+            {
+                height: 10vh;
+                background-color:rgb(112, 88, 88);
+                width: 8rem;
+                display: flex;
+                margin-top: 1vh;
+            }
+            .filter
+            {
+                height: 100%;
+                width: 25%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .filter_color
+            {
+                height: 50%;
+                width: 50%;
+                
+            }
+            .pink
+            {
+                background-color: pink;
+            }
+            .blue
+            {
+                background-color: blue;
+
+            }
+            .green
+            {
+                background-color: green;
+            }
+            .black
+            {
+                background-color: black;
+            }
+            .icon-container
+            {
+                width: 50%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .fas
+            {
+                font-size: 2.5rem;
+                color: blanchedalmond;
+            }
+            .active
+            {
+                background-color: darkolivegreen;
+            }
+            .modal_container
+            {
+                display: flex;
+                position: absolute;
+                height: 16rem;
+                width: 35rem;
+                
+                left: calc((100vw - 36rem)/2);
+                
+                top:30vh;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.986);
+                
+            }
+            .input_container
+            {
+                height: 100%;
+                width: 70%;
+            }
+            .filters
+            {
+                height: 15%;
+                width: 50%;
+            }
+            .modal_input
+            {
+                height: 100%;
+                width: 100% ;
+                outline: none;
+                padding: 2rem 3rem;
+                font-size:1.5rem;
+                line-height: 145%;
+                font-weight: 400;
+            }
+            .modal_filter_container
+            {
+                width:30%;
+                background-color: #444;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 1.7rem 1.2rem;
+                
+            }
+            .border
+            {
+                border: 0.2rem solid rgb(189, 125, 7);
+            }
+            .main_container{
+            height:88vh;
+            display: flex;
+            padding-top: 2rem;
+            padding-left: 3rem;
+            justify-content: space-evenly;
+            
+        }
+        .task_filter{
+            height: 7%;
+        }
+        .task_container{
+            height: 10rem;
+            width:16rem;
+            background-color: rgb(206, 205, 205);
+        
+            
+        }
+        .task_desc_container{
+            padding-left: 0.2rem;
+            height: 80%;
+            overflow-y: auto;
+            text-align: center;
+        }
+        .task_desc{
+            text-align: center ;
+        }
+        .uid{
+            font-size: 0.95rem;
+            color:rgb(83, 84, 88);
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+            
+        </style>
+        <body>
+            <div class="toolbar">
+                <div class="filter-container">
+                    <div class="filter">
+                        <div class="filter_color pink"></div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter_color green"></div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter_color blue"></div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter_color black"></div>
+                    </div>
+                </div>
+                <div class="action-container">
+                    <div class="icon-container">
+                        <i class="fas fa-plus"></i>
+                       </div>
+                        <div class="icon-container">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="main_container"></div>
+                <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"defer></script>
+            
+                <script src="myscript.js" defer>
+                </script>
+            
+                
+                
+                
+            
+            
+        </body>
+</html>
